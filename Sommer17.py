@@ -6,7 +6,7 @@ def auswertung(abdruck, schwelle, finger):
     abdrücke = suche(abdruck)
 
     # Löschen aller falschen Einträge
-    # Das funktioniert nur wenn man rückwärts über das Array iteriert
+    # Das funktioniert nur, wenn man rückwärts über das Array iteriert
 
     i = laenge(abdrücke)
     while i >= 0:

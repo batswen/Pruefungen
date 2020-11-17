@@ -18,8 +18,8 @@ def auswertung(abdruck, schwelle, finger):
     l = laenge(abdrücke)
 
     for i in range(l - 1):
-        for j in range(0, l - i - 1):
-            if abdrücke[j] < abdrücke[j + 1]:
+        for j in range(l - i - 1):
+            if abdrücke[j]["score"] < abdrücke[j + 1]["score"]:
                 abdrücke[j], abdrücke[j + 1] = abdrücke[j + 1], abdrücke[j]
 
     return abdrücke

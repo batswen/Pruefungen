@@ -8,7 +8,7 @@ def auswertung(abdruck, schwelle, finger):
     # Löschen aller falschen Einträge
 
     i = laenge(abdrücke)
-    while i > 0:
+    while i >= 0:
         if abdrücke[i].score < schwelle or (finger != 0 and abdrücke[i].idFinger):
             loesche(abdrücke, i)
         else:

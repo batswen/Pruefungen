@@ -9,7 +9,7 @@ def auswertung(abdruck, schwelle, finger):
 
     i = laenge(abdrücke)
     while i >= 0:
-        if abdrücke[i]["score"] < schwelle or (finger != 0 and abdrücke[i]["idFinger"]):
+        if abdrücke[i]["score"] < schwelle or (finger != 0 and abdrücke[i]["idFinger"] != finger):
             loesche(abdrücke, i)
         else:
             i = i - 1

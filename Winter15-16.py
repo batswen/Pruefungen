@@ -28,6 +28,6 @@ def prüfe_id(id):
     summe = sum10 - summe
 
     # True oder False zurückliefern
-    return summe == int(id[len(id - 1)])
+    return summe == int(id[len(id) - 1])
 
 print(prüfe_id(6258431979))

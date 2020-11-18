@@ -30,4 +30,4 @@ def prüfe_id(id):
     # True oder False zurückliefern
     return summe == int(id[len(id - 1)])
 
-prüfe_id(6258431979)
+print(prüfe_id(6258431979))
